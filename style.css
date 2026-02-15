@@ -25,7 +25,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
       rgba(0, 153, 219, 0.9) 0%,
       rgba(0, 104, 181, 0.9) 50%,
@@ -258,6 +259,12 @@ button .fas {
   color: #003c71;
 }
 
+.celebration-message {
+  background-color: #ecfdf3;
+  color: #14532d;
+  border: 2px solid #86efac;
+}
+
 /* Counter */
 #attendeeCount {
   color: #0071c5;
@@ -311,6 +318,81 @@ select {
   border-top: 2px solid #f1f5f9;
 }
 
+/* Attendee list */
+.attendee-list {
+  margin-top: 28px;
+  text-align: left;
+}
+
+.attendee-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.attendee-list h3 {
+  color: #64748b;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.clear-attendees {
+  background-color: transparent;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  min-width: auto;
+  height: auto;
+  box-shadow: none;
+}
+
+.clear-attendees:hover {
+  background-color: #f1f5f9;
+  transform: none;
+  box-shadow: none;
+}
+
+.attendee-list-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attendee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.attendee-name {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.attendee-team {
+  color: #475569;
+  font-size: 14px;
+}
+
+.attendee-empty {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  color: #64748b;
+  font-size: 14px;
+}
+
 .team-stats h3 {
   color: #64748b;
   font-size: 16px;
@@ -329,6 +411,11 @@ select {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.team-card.winner {
+  border: 2px solid #0ea5e9;
+  box-shadow: 0 6px 16px rgba(14, 165, 233, 0.25);
 }
 
 /* Team card colors */
